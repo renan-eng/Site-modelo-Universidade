@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Universite Website Design - Template</title>
+</head>
+<body>
+
+    <!--------- Main Nav-bar ----------->  
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="about.html">SOBRE NÓS</a></li>
+                    <li><a href="course.html">CURSOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTATO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Fale Conosco</h1>
+    </section>
+
+    <!--------- fale conosco ----------->
+
+    <!--------- google maps ----------->  
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7529.661107998757!2d-46.64374043989136!3d-23.544971305644214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58489bffcd2d%3A0x44b56c38d55442d5!2sR.%20Amaral%20Gurgel%20-%20Vila%20Buarque%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001221-000!5e0!3m2!1spt-BR!2sbr!4v1630422217847!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <!-- Informações de contato: endereço, telefone e email -->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Rua ABC, Bairo Bairro, Número 123</h5>
+                        <p>São Paulo - SP, Brazil</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>012 93456-7890</h5>
+                        <p>Segunda à Sábado, de 10AM as 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>renandevp@gmail.com</h5>
+                        <p>Aguardo seu contato</p>
+                    </span>
+                </div>
+            </div> 
+            <!-- formulario para contato -->
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Digite Seu Nome" required>
+                    <input type="email" placeholder="Digite Seu Email" required>
+                    <input type="text" placeholder="Assunto" required>
+                    <textarea rows="8" placeholder="Menssagem" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Enviar Menssagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--------- Footer -----------> 
+    
+    
+    <section class="footer">
+        <h4>Sobre Nós</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi mollitia praesentium nisi, culpa dicta sint ea, aspernatur beatae, dolorem quas  <br> reprehenderit veritatis sequi aperiam tempore quod! Fuga distinctio at perspiciatis?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Feito com <i class="fa fa-heart-o"></i> por Renan Guimarães</p>
+    </section>
+
+    <!-- JavaScript Toggle Menu -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        //Cria função que mostra e esconde o menus de navegação para telas pequenas
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
